@@ -2,7 +2,13 @@
 A modern, vanilla JavaScript Facebook style gif previewer and loader is. Inspired by [this jQuery plugin](https://github.com/SodhanaLibrary/jqGifPreview), just 2.8kb minified.
 
 ### Demo
-[Here](https://klombomb.github.io/gifsee.js/)
+  <img src="img/gif_01.png" class="custom-class" data-gifsee="img/gif_01.gif" alt="">
+  <img src="img/gif_02.png" class="custom-class" data-gifsee="img/gif_02.gif" alt="">
+  <script src="js/gifsee.js"></script>
+  <script>
+  var myimg = new gifsee(document.querySelectorAll('img')[0]);
+  var myimg2 = new gifsee(document.querySelectorAll('img')[1]);
+  </script>
 
 ### For Modern Browsers 
 Gifsee unapologetically uses modern JavaScript techniques, without transpiling them back to ES5. Gifsee uses Fetch, Arrow Functions, Calc and Promises. For old browsers using a [Fetch Polyfill](https://github.com/github/fetch) is recommended.
@@ -20,6 +26,7 @@ For now gifsee only supports old fashioned scripts, but module support will be a
 ```javascript
 var myImage = new gifsee(document.getElementById('super-cool-gif'));
 ```
+
 ### Docs
 **gifsee** ```new gifsee(HTMLImageElement)```  
 *gifsee has one parameter which must be an Image element*  
