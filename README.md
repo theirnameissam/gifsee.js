@@ -2,6 +2,9 @@
 A modern, vanilla JavaScript Facebook style gif previewer and loader is. Inspired by [this jQuery plugin](https://github.com/SodhanaLibrary/jqGifPreview), just 2.8kb minified.
 
 ### Demo
+![a gif of gif loaded using gifsee](http://i.giphy.com/d3mmlLvQFadk6mOs.gif)
+
+
 [Here](https://klombomb.github.io/gifsee.js/)
 
 ### For Modern Browsers 
