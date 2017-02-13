@@ -20,7 +20,7 @@ For now gifsee only supports old fashioned scripts, but module support will be a
 ``` html
   <link rel="stylesheet" href="../gifsee.min.css">
   <script src="../gifsee.js"></script>
-```
+````
 
 ### Usage 
 ```html 
