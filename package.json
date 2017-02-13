@@ -1,0 +1,32 @@
+{
+  "name": "gifsee",
+  "version": "0.0.2",
+  "description": "Facebook style gif viewing and loading. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "keywords": [
+    "gif"
+  ],
+  "author": "klombomb",
+  "license": "MIT",
+  "devDependencies": {
+    "babili": "0.0.11",
+    "express": "^4.14.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-multi-dest": "0.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "jest": "^18.1.0",
+    "rewire": "^2.5.2"
+  }
+}

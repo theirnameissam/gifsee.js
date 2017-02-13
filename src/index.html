@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gifsee</title>
+    <link rel="stylesheet" href="css/gifsee.min.css">
+</head>
+<body>
+    <img src="img/gif_01.png" class="custom-class" data-gifsee="img/gif_01.gif" alt="">
+    <img src="img/gif_02.png" class="custom-class" data-gifsee="img/gif_02.gif" alt="">
+    <script src="js/gifsee.js"></script>
+    <script>
+    var myimg = new gifsee(document.querySelectorAll('img')[0]);
+    var myimg2 = new gifsee(document.querySelectorAll('img')[1]);
+    </script>
+    <p class="hello">Hello</p>
+</body>
+</html>

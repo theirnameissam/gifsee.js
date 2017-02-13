@@ -1,0 +1,68 @@
+.gifsee-circle
+{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: unquote("calc(50% - 40px)");
+  left: unquote("calc(50% - 40px)");
+  background: rgba(20, 20, 20, 0.6);
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: dashed 3px white;
+  cursor: pointer;
+  transform-origin: center center;
+  &.loading {
+    animation: spin 1s infinite linear;
+    transition: linear all 1s;
+    .text {
+      animation: counter 1s infinite linear;
+      transition: linear all 1s;
+    }
+  }
+  .text
+  {
+    color: #fafafa;
+    text-align: center;
+    font-size: 23px;
+    height: 80px;
+    width: 80px;
+    font-family: monospace;
+    display: block;
+    user-select: none;
+    &::after
+    {
+        content: 'GIF';
+        transform-origin: center center;
+        line-height: 80px;
+    }    
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(180deg);
+  }
+  to 
+  {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counter {
+  from {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(-180deg);
+  }
+  to 
+  {
+    transform: rotate(-360deg);
+  }
+}
