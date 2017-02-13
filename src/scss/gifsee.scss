@@ -12,6 +12,7 @@
   border: dashed 3px white;
   cursor: pointer;
   transform-origin: center center;
+  box-sizing: content-box !important;
   &.loading {
     animation: spin 1s infinite linear;
     transition: linear all 1s;
