@@ -1,5 +1,8 @@
 # gifsee
-A modern, vanilla JavaScript Facebook style gif previewer and loader. Inspired by [this jQuery plugin.](https://github.com/SodhanaLibrary/jqGifPreview)
+A modern, vanilla JavaScript Facebook style gif previewer and loader is. Inspired by [this jQuery plugin](https://github.com/SodhanaLibrary/jqGifPreview), just 2,8kb minified.
+
+### For Modern Browsers 
+Gifsee unapologetically uses modern JavaScript techniques, without transpiling them back to ES5. Gifsee uses Fetch, Arrow Functions, Calc and Promises. For old browsers using a [Fetch Polyfill](https://github.com/github/fetch) is recommended.
 
 ### Install
 For now gifsee only supports old fashioned scripts, but module support will be added very soon. Grab a copy of the latest version from the ```dist``` folder and add it to your page, or clone the entire repo. 
@@ -27,3 +30,8 @@ URL for gif.
 
 ### Demo
 [Here](https://klombomb.github.io/gifsee.js/)
+
+### To-do
+- Add tests
+- Webpack/CommonJS/UMD support
+- Cleaner code
