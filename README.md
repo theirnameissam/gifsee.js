@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# gifsee
+A modern, vanilla JavaScript Facebook style gif previewer and loader is. Inspired by [this jQuery plugin](https://github.com/SodhanaLibrary/jqGifPreview), just 2.8kb minified.
 
-You can use the [editor on GitHub](https://github.com/klombomb/gifsee.js/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+### Demo
+[Here](https://klombomb.github.io/gifsee.js/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### For Modern Browsers 
+Gifsee unapologetically uses modern JavaScript techniques, without transpiling them back to ES5. Gifsee uses Fetch, Arrow Functions, Calc and Promises. For old browsers using a [Fetch Polyfill](https://github.com/github/fetch) is recommended.
 
-### Markdown
+### Install
+For now gifsee only supports old fashioned scripts, but module support will be added very soon. Grab a copy of the latest version from the ```dist``` folder and add it to your page, or clone the entire repo. 
+```html
+<link rel="stylesheet" href="../gifsee.min.css">
+<script src="../gifsee.js"></script>
+```
+### Usage 
+```html 
+<img src="frame.png" data-gifsee="gif.png" id="super-cool-gif">
+```
+```javascript
+var myImage = new gifsee(document.getElementById('super-cool-gif'));
+```
+### Docs
+**gifsee** ```new gifsee(HTMLImageElement)```  
+*gifsee has one parameter which must be an Image element*  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**HTMLImageElement**  
+*src*  
+URL for an image preview of your Gif. (can be any image, but width should be the same a gif)
 
-```markdown
-Syntax highlighted code block
+*data-gifsee*  
+URL for gif.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-<a href="#">CustomHTML?????</a>
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/klombomb/gifsee.js/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### To-do
+- Add tests
+- Webpack/CommonJS/UMD support
+- Cleaner code
