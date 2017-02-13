@@ -16,10 +16,12 @@ Gifsee unapologetically uses modern JavaScript techniques, without transpiling t
 ### Install
 For now gifsee only supports old fashioned scripts, but module support will be added very soon. Grab a copy of the latest version from the ```dist``` folder and add it to your page, or clone the entire repo. 
 
+
 ``` html
-<link rel="stylesheet" href="../gifsee.min.css">
-<script src="../gifsee.js"></script>
+  <link rel="stylesheet" href="../gifsee.min.css">
+  <script src="../gifsee.js"></script>
 ```
+
 ### Usage 
 ```html 
 <img src="frame.png" data-gifsee="gif.png" id="super-cool-gif">
