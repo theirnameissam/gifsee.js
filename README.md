@@ -4,7 +4,7 @@ A modern, vanilla JavaScript Facebook style gif previewer and loader is. Inspire
 ### Demo
   <img src="img/gif_01.png" class="custom-class" data-gifsee="img/gif_01.gif" alt="">
   <img src="img/gif_02.png" class="custom-class" data-gifsee="img/gif_02.gif" alt="">
-  <script src="js/gifsee.js"></script>
+  <script src="gifsee.min.js"></script>
   <script>
   var myimg = new gifsee(document.querySelectorAll('img')[0]);
   var myimg2 = new gifsee(document.querySelectorAll('img')[1]);
